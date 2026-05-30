@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Virtual environments
+.env
+.venv/
+venv/
+
+# Raw and processed data files
+data/raw/
+data/processed/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Spotfire files
+*.dxp
