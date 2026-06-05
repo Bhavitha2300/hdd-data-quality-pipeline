@@ -1,0 +1,44 @@
+HDD Processed CSV to MySQL Load Report
+============================================================
+
+File: bindingdb_long.csv
+Target table: raw_bindingdb
+CSV rows: 8281
+CSV columns: ['target_name', 'compound_id', 'binding_value']
+MySQL rows: 8281
+Status: PASSED - row counts match
+
+File: bioassays_long.csv
+Target table: raw_bioassays
+CSV rows: 22569
+CSV columns: ['assay_name', 'compound_id', 'assay_value']
+MySQL rows: 22569
+Status: PASSED - row counts match
+
+File: clintox_long.csv
+Target table: raw_clintox
+CSV rows: 236
+CSV columns: ['toxicity_label', 'compound_id', 'toxicity_value']
+MySQL rows: 236
+Status: PASSED - row counts match
+
+File: sider_long.csv
+Target table: raw_sider
+CSV rows: 8748
+CSV columns: ['adverse_event', 'compound_id', 'sider_value']
+MySQL rows: 8748
+Status: PASSED - row counts match
+
+File: tox21_long.csv
+Target table: raw_tox21
+CSV rows: 320
+CSV columns: ['tox21_assay', 'compound_id', 'tox21_value']
+MySQL rows: 320
+Status: PASSED - row counts match
+
+File: toxcast_long.csv
+Target table: raw_toxcast
+CSV rows: 8026
+CSV columns: ['toxcast_assay', 'compound_id', 'toxcast_value']
+MySQL rows: 8026
+Status: PASSED - row counts match
