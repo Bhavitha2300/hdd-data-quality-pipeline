@@ -1,0 +1,13 @@
+Raw table row counts matched ingestion report.
+Distinct compound count: 
+'raw_bindingdb','1183'
+'raw_bioassays','2484'
+'raw_clintox','118'
+'raw_sider','324'
+'raw_tox21','31'
+'raw_toxcast','25'
+
+No missing compound IDs found in any table.
+Most common BindingDB target was 'D(2) dopamine receptor', '103'
+Most common Bioassays assay was 'AID_504847', '1690'
+Duplicate checks returned 0 rows.

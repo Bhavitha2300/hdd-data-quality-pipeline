@@ -127,3 +127,103 @@ HAVING COUNT(*) > 1
 
 ORDER BY duplicate_count DESC
 LIMIT 50;
+
+-- 5. Most common targets, assays, toxicity labels, and adverse events
+
+SELECT 
+    target_name AS measurement_name,
+    COUNT(*) AS record_count
+FROM raw_bindingdb
+GROUP BY target_name
+ORDER BY record_count DESC
+LIMIT 20;
+
+SELECT 
+    assay_name AS measurement_name,
+    COUNT(*) AS record_count
+FROM raw_bioassays
+GROUP BY assay_name
+ORDER BY record_count DESC
+LIMIT 20;
+
+SELECT 
+    toxicity_label AS measurement_name,
+    COUNT(*) AS record_count
+FROM raw_clintox
+GROUP BY toxicity_label
+ORDER BY record_count DESC
+LIMIT 20;
+
+SELECT 
+    adverse_event AS measurement_name,
+    COUNT(*) AS record_count
+FROM raw_sider
+GROUP BY adverse_event
+ORDER BY record_count DESC
+LIMIT 20;
+
+SELECT 
+    tox21_assay AS measurement_name,
+    COUNT(*) AS record_count
+FROM raw_tox21
+GROUP BY tox21_assay
+ORDER BY record_count DESC
+LIMIT 20;
+
+SELECT 
+    toxcast_assay AS measurement_name,
+    COUNT(*) AS record_count
+FROM raw_toxcast
+GROUP BY toxcast_assay
+ORDER BY record_count DESC
+LIMIT 20;
+
+-- 6. Value distribution checks
+
+SELECT 
+    binding_value AS measurement_value,
+    COUNT(*) AS count_records
+FROM raw_bindingdb
+GROUP BY binding_value
+ORDER BY count_records DESC
+LIMIT 20;
+
+SELECT 
+    assay_value AS measurement_value,
+    COUNT(*) AS count_records
+FROM raw_bioassays
+GROUP BY assay_value
+ORDER BY count_records DESC
+LIMIT 20;
+
+SELECT 
+    toxicity_value AS measurement_value,
+    COUNT(*) AS count_records
+FROM raw_clintox
+GROUP BY toxicity_value
+ORDER BY count_records DESC
+LIMIT 20;
+
+SELECT 
+    sider_value AS measurement_value,
+    COUNT(*) AS count_records
+FROM raw_sider
+GROUP BY sider_value
+ORDER BY count_records DESC
+LIMIT 20;
+
+SELECT 
+    tox21_value AS measurement_value,
+    COUNT(*) AS count_records
+FROM raw_tox21
+GROUP BY tox21_value
+ORDER BY count_records DESC
+LIMIT 20;
+
+SELECT 
+    toxcast_value AS measurement_value,
+    COUNT(*) AS count_records
+FROM raw_toxcast
+GROUP BY toxcast_value
+ORDER BY count_records DESC
+LIMIT 20;

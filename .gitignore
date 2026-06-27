@@ -18,3 +18,5 @@ Thumbs.db
 
 # Spotfire files
 *.dxp
+
+notebooks/Pipeline_status.md
