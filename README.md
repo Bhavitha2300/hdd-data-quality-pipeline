@@ -26,3 +26,4 @@ The Harmonized Drug Dataset integrates compound metadata, bioassay information, 
 6. SQL analysis
 7. Spotfire visualization
 8. Final reporting
+Last updated for GitHub contribution email test.
